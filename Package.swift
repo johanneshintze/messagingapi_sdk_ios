@@ -15,13 +15,13 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "ZendeskSDKConfigurationsSDK",
-                 url: "https://github.com/zendesk/sdkconfigurations_sdk_ios",
+                 url: "https://github.com/johanneshintze/sdkconfigurations_sdk_ios",
                  .exact("1.1.9"))
     ],
     targets: [
         .binaryTarget(
             name: "ZendeskMessagingAPISDK",
-            path: "MessagingAPI.xcframework"
+            path: "ZendeskMessagingAPI.xcframework"
         ),
         .target(name: "ZendeskMessagingAPISDKTargets",
                 dependencies: [
